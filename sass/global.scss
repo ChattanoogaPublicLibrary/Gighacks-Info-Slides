@@ -1,0 +1,56 @@
+// Imports
+@import "vendor/reveal.min";
+
+// Colors
+$light-grey: #eee;
+$black: #000;
+
+// Highlight Color
+::selection {
+  color: white;
+  background: $black;
+}
+
+// Typography
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal {
+  font-family: "Open Sans", serif;
+  font-size: 2em;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $black;
+  padding: 0;
+  margin: 0;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", serif;
+    font-weight: 800;
+    line-height: 1em;
+    margin: 0 0 .35em 0;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+
+  p {
+    font-weight: 700;
+  }
+
+  ul {
+    font-size: .85em;
+    list-style-type: none;
+    line-height: 1.5em;
+    margin-bottom: .5em;
+  }
+
+}
+
+// Logo
+.reveal .logo {
+  display: block;
+  margin: auto;
+}
