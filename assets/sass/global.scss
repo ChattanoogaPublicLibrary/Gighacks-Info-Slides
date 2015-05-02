@@ -1,15 +1,14 @@
 // Imports
 @import "vendor/reveal.min";
 
-// Colors
-$light-grey: #eee;
-$black: #000;
-
 // Highlight Color
 ::selection {
   color: white;
-  background: $black;
+  background: black;
 }
+
+// Responsive Images
+img { max-width: 100%; height: auto; -ms-interpolation-mode:bicubic }
 
 // Typography
 .reveal .slides {
@@ -18,15 +17,11 @@ $black: #000;
 
 .reveal {
   font-family: "Open Sans", serif;
-  font-size: 2em;
-  line-height: 1.5;
   font-weight: 400;
-  color: $black;
-  padding: 0;
-  margin: 0;
+  font-size: 2em;
+  line-height: 1.55;
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Open Sans", serif;
     font-weight: 800;
     line-height: 1em;
     margin: 0 0 .35em 0;
@@ -43,14 +38,30 @@ $black: #000;
   ul {
     font-size: .85em;
     list-style-type: none;
-    line-height: 1.5em;
     margin-bottom: .5em;
   }
 
 }
 
-// Logo
-.reveal .logo {
+// Intro Slide
+.intro-slide img {
   display: block;
   margin: auto;
+}
+
+// Partners Slide
+.partners {
+  text-align: center;
+
+  h2 {
+    text-align: center;
+  }
+
+  img {
+    max-width: 280px;
+    max-height: 180px;
+    vertical-align: middle;
+    padding: 1em;
+  }
+
 }
